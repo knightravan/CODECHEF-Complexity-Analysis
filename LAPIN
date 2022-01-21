@@ -1,0 +1,16 @@
+for i in range(int(input())):
+    a=input()
+    if len(a)%2==0:
+        s1=a[:len(a)//2]
+        s2=a[len(a)//2:]
+    else:
+        s1=a[:len(a)//2]
+        s2=a[len(a)//2+1:]
+    lst1=str(sorted(list(s1)))
+    lst2=str(sorted(list(s2)))
+    
+    if lst1==lst2:
+        print("YES")
+    else:
+        print("NO")
+    
