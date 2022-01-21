@@ -1,0 +1,13 @@
+a=int(input())
+count=a
+lst=[]
+for i in range(a):
+    lst.append(int(input()))
+lst.sort()
+s=0
+for i in lst:
+    t=i*count
+    count-=1
+    if t>s:
+        s=t
+print(s)
