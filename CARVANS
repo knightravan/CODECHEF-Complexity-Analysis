@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+    a=int(input())
+    co=1
+    lst=list(map(int,input().split()))
+    minu=lst[0]
+    for i in range(1,len(lst)):
+        if lst[i]<=minu:
+            co+=1
+            minu=lst[i]
+    print(co)
